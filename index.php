@@ -20,6 +20,7 @@ $result = $conn->query($sql);
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
     >
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -33,12 +34,10 @@ $result = $conn->query($sql);
     <div class="container mt-5">
         <h1>Dashboard</h1>
         <p>Welcome to the Student Management System.</p>
-        <div class="card mb-4">
-            <div class="card-body">
-                <h5>Total Students</h5>
-                <h2>
-                    <?php echo $totalStudents; ?>
-                </h2>
+        <div class="dashboard-card mb-4">
+            <h5>Total Students</h5>
+            <div class="total-number">
+                <?php echo $totalStudents; ?>
             </div>
         </div>
         <a href="add.php" class="btn btn-primary mb-4">
@@ -46,7 +45,7 @@ $result = $conn->query($sql);
         </a>
         <h2>Student List</h2>
         <div class="table-responsive">
-            <table class="table table-bordered table-striped">
+            <table class="table table-striped table-hover">
                 <thead>
                     <tr>
                         <th>S.No</th>
@@ -113,9 +112,8 @@ $result = $conn->query($sql);
                             </td>
                         </tr>
                         <?php
-$number++;
-}
-
+                        $number++;
+                    }
                     ?>
                 </tbody>
             </table>

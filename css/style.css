@@ -1,0 +1,27 @@
+body {
+    background-color: #f5f7fa;
+}
+
+h1 {
+    color: #212529;
+    font-weight: 600;
+}
+
+.dashboard-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.total-number {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.table-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
